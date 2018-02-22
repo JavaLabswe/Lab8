@@ -7,7 +7,7 @@ public class game {
         int row, column;
         char player = 'X';
 
-        //create 2 dimensional array for tic tac toe board
+       
         char[][] board = new char[3][3];
         char ch = '1';
         for (int i = 0; i < 3; i++){
@@ -21,11 +21,11 @@ public class game {
             row = in.nextInt();
             column = in.nextInt();
 
-            //occupied
+           
             while (board[row][column] == 'X' || board[row][column] == 'O') {
                 System.out.println("This spot is occupied. Please try again");
             }
-            //place the X
+           
             board[row][column] = player;
             displayBoard(board);
 
@@ -33,7 +33,7 @@ public class game {
                 System.out.println("Player " + player + " is the winner!");
             }
 
-            //time to swap players after each go.
+           
             if (player == 'O') {
                 player = 'X';
 
