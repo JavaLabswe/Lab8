@@ -12,7 +12,7 @@ public class Max2DArray {
 
 };
 		int max=0;
-		int s,r;
+		int s = 0,r=0;
 		int []w=new int[a.length*a[0].length];
 		for(int i=0;i<a.length;i++) {
 			for(int y=0;y<a[0].length;y++) {
@@ -25,7 +25,10 @@ public class Max2DArray {
 				}
 				
 			}
+			
 		}
+		System.out.print("print max"+max);
+		System.out.print("print max"+s+","+r);
 		for(int i=0;i<a.length;i++) {
 			for(int y=0;y<a[i].length-1;y++) {
 				if(a[i][y]>a[i][y+1]) {
@@ -35,5 +38,6 @@ public class Max2DArray {
 				}
 			}
 		}
+		
 }
 }
