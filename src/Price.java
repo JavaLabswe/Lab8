@@ -18,7 +18,7 @@ public class Price {
 			
 			
 		}
-		double avg=sum/20;
+		double avg=sum/20; 
 		System.out.print("\naverage of the prices"+avg);
 		System.out.print("\nvalues that are higher than the calculated average value ");
 		for(int k=0;k<20;k++) {
